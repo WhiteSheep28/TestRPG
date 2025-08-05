@@ -5,6 +5,11 @@
 #include "Character.h"
 #include "Monster.h"
 
+#include "Inventory.h"
+#include "Item_Inventory.h"
+
+#include "Normal_Item.h"
+
 using namespace std;
 
 cDungeon::cDungeon()
@@ -17,7 +22,7 @@ cDungeon::~cDungeon()
 
 }
 
-void cDungeon::Monster_Spawn(cCharacter* pCharacter, cItem* pNormal_Item, cInventory* pItem_Inventory)
+void cDungeon::Monster_Spawn(cCharacter* pCharacter, cNormal_Item* pNormal_Item, cItem_Inventory* pItem_Inventory)
 {
 	while (1)
 	{
@@ -34,7 +39,7 @@ void cDungeon::Monster_Spawn(cCharacter* pCharacter, cItem* pNormal_Item, cInven
 	}
 }
 
-void cDungeon::Dungeon_Fight(cCharacter* pCharacter, cMonster* pMonster, cItem* pNormal_Item, cInventory* pItem_Inventory)
+void cDungeon::Dungeon_Fight(cCharacter* pCharacter, cMonster* pMonster, cNormal_Item* pNormal_Item, cItem_Inventory* pItem_Inventory)
 {
 	while (1)
 	{
@@ -57,7 +62,7 @@ void cDungeon::Dungeon_Fight(cCharacter* pCharacter, cMonster* pMonster, cItem* 
 		{
 		case '1': pCharacter->Attack(pMonster, pCharacter);
 		case '2': break;
-		case '3': break;
+		case '3': pItem_Inventory->Inventory_Ui(pCharacter, pNormal_Item);
 		case ' ': break;
 		default: continue;
 		}

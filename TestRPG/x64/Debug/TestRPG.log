@@ -1,15 +1,2 @@
-﻿  Character.cpp
-  Dungeon.cpp
-  Equipment_Inventory.cpp
-  Game_Manager.cpp
-C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Game_Manager.cpp(4,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-  Inventory.cpp
-  Item.cpp
-  Item_Inventory.cpp
-  main.cpp
-C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\main.cpp(19,6): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  Monster.cpp
-  Normal_Item.cpp
-C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Normal_Item.cpp(51,2): error C2059: 구문 오류: '}'
-  Object_Manager.cpp
-  코드를 생성하고 있습니다...
+﻿  Dungeon.cpp
+  TestRPG.vcxproj -> C:\Users\admin\Downloads\TestRPG-main\TestRPG\x64\Debug\TestRPG.exe

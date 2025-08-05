@@ -1,10 +1,13 @@
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Character.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Character.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Dungeon.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Dungeon.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Equipment_Inventory.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Equipment_Inventory.obj
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Equipment_Item.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Equipment_Item.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Game_Manager.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Game_Manager.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Inventory.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Inventory.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Inventory_Manager.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Inventory_Manager.obj
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Item.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Item.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Item_Inventory.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Item_Inventory.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\main.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\main.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Monster.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Monster.obj
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Normal_Item.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Normal_Item.obj
 C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\Object_Manager.cpp;C:\Users\admin\Downloads\TestRPG-main\TestRPG\TestRPG\x64\Debug\Object_Manager.obj

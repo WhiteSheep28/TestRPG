@@ -48,5 +48,8 @@ void cNormal_Item::Item_Manage(cCharacter* pCharacter, int Item_Num, int Item_Co
 		}
 	}
 	case 2:
+	{
+		break;
+	}
 	}
 }
