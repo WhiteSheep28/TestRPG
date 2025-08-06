@@ -19,6 +19,9 @@ cCharacter::cCharacter()
 	m_nHealth = 0;
 	m_nStrength = 0;
 	m_nDefense = 0;
+
+	m_nItem_Inventory[0] = 1;
+	m_nMy_Healing_Potion = 1;
 }
 
 cCharacter::~cCharacter()

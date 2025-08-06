@@ -26,7 +26,7 @@ void cNormal_Item::Item_Manage(cCharacter* pCharacter, int Item_Num, int Item_Co
 		{
 		case 1:
 		{
-			cout << "회복 물약";
+			cout << "회복 물약 : " << pCharacter->Check_Healing_Potion() << "개";
 		}
 		case 2:
 		{

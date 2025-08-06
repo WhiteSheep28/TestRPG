@@ -15,6 +15,8 @@ public:
 	cCharacter();
 	virtual ~cCharacter();
 
+	int Check_Healing_Potion() { return m_nMy_Healing_Potion; }
+
 protected:
 
 private:

@@ -43,28 +43,41 @@ void cDungeon::Dungeon_Fight(cCharacter* pCharacter, cMonster* pMonster, cNormal
 {
 	while (1)
 	{
-		pCharacter->All_Stats();
-		pMonster->All_Stats();
-		
-		system("cls");
-		cout << "{ Character" << "}{" << " Monster }" << endl;
-		cout << "체력 : " << pCharacter->m_nHealth << "체력 : " << pMonster->m_nHealth << endl;
-		cout << "공격력 : " << pCharacter->m_nStrength << "공격력 : " << pMonster->m_nStrength << endl;
-		cout << "방어력 : " << pCharacter->m_nDefense << "방어력 : " << pMonster->m_nDefense << endl;
-		cout << "1. 공격하기" << endl;
-		cout << "2. 장비창" << endl;
-		cout << "3. 인벤토리" << endl;
-		cout << "Space. 던전 나가기" << endl;
 
-		pCharacter->Select_Num();
-
-		switch (pCharacter->Get_Select_Num())
+		while (1)
 		{
-		case '1': pCharacter->Attack(pMonster, pCharacter);
-		case '2': break;
-		case '3': pItem_Inventory->Inventory_Ui(pCharacter, pNormal_Item);
-		case ' ': break;
-		default: continue;
+			pCharacter->All_Stats();
+			pMonster->All_Stats();
+		
+			system("cls");
+			cout << "{ Character" << "}{" << " Monster }" << endl;
+			cout << "체력 : " << pCharacter->m_nHealth << "체력 : " << pMonster->m_nHealth << endl;
+			cout << "공격력 : " << pCharacter->m_nStrength << "공격력 : " << pMonster->m_nStrength << endl;
+			cout << "방어력 : " << pCharacter->m_nDefense << "방어력 : " << pMonster->m_nDefense << endl;
+			cout << "1. 공격하기" << endl;
+			cout << "2. 장비창" << endl;
+			cout << "3. 인벤토리" << endl;
+			cout << "Space. 던전 나가기" << endl;
+
+			pCharacter->Select_Num();
+
+			switch (pCharacter->Get_Select_Num())
+			{
+			case '1': pCharacter->Attack(pMonster, pCharacter); break;
+			case '2': break;
+			case '3': pItem_Inventory->Inventory_Ui(pCharacter, pNormal_Item); break;
+			case ' ': break;
+			default: continue;
+			}
+
+			//인벤토리에 관한 행동은 턴이 진행되지 않게 예외 처리
+			if (pItem_Inventory->Check_Invite_Inventory() == 1)
+			{
+				pItem_Inventory->Reset_Invite_Inventory();
+
+				continue;
+			}
+			else break;
 		}
 
 		if (pCharacter->Get_Select_Num() == ' ') break;

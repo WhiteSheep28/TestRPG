@@ -11,7 +11,7 @@ using namespace std;
 
 cItem_Inventory::cItem_Inventory()
 {
-
+	
 }
 
 cItem_Inventory::~cItem_Inventory()
@@ -22,15 +22,20 @@ cItem_Inventory::~cItem_Inventory()
 void cItem_Inventory::Inventory_Ui(cCharacter* pCharacter, cNormal_Item* pNormal_Item)
 {
 	int nInventory_Count = 0;
+	Is_Invite_Inventory = 1;
 
 	while (1)
 	{
+		system("cls");
+
 		nInventory_Count = 0;
 
 		cout << "{ 인벤토리 }" << endl;
 
-		while (nInventory_Count <= 11)
+		while (nInventory_Count < 11)
 		{
+			cout << nInventory_Count << ". ";
+
 			pNormal_Item->Item_Manage(pCharacter, pCharacter->m_nItem_Inventory[nInventory_Count], 0, 1);
 
 			cout << endl;
@@ -60,7 +65,10 @@ void cItem_Inventory::Inventory_Ui(cCharacter* pCharacter, cNormal_Item* pNormal
 
 			break;
 		}
+		case ' ': break;
 		default: continue;
 		}
+		 
+		if (pCharacter->Get_Select_Num() == ' ') break;
 	}
 }
