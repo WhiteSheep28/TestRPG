@@ -1,10 +1,11 @@
 #pragma once
+#ifndef CITEM_H
+#define CITEM_H
 
 #include <iostream>
 
 using namespace std;
 
-class cCharacter;
 class cItem
 {
 public:
@@ -15,8 +16,13 @@ public:
 	//Item_Num : 아이템 코드, Item_Count : 먹은 아이템 갯수
 	virtual void Item_Manage(cCharacter* pCharacter, int Item_Num, int Item_Count, int Tool_Select) { ; }
 
+	bool Check_Exists_Item() { return Is_Exists_Item; }
+
 protected:
+	bool Is_Exists_Item;
 
 private:
 
 };
+
+#endif

@@ -1,4 +1,6 @@
 #pragma once
+#ifndef CITEM_INVENTORY_H
+#define CITEM_INVENTORY_H
 
 #include <iostream>
 
@@ -6,8 +8,6 @@
 
 using namespace std;
 
-class cCharacter;
-class cNormal_Item;
 class cItem_Inventory :
 public cInventory
 {
@@ -16,9 +16,12 @@ public:
 	virtual ~cItem_Inventory();
 
 	virtual void Inventory_Ui(cCharacter* pCharacter, cNormal_Item* pNormal_Item);
+	virtual void Clean_Inventory(cCharacter* pCharacter, cNormal_Item* pNormal_Item);
 
 protected:
 
 private:
 
 };
+
+#endif

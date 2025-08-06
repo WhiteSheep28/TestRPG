@@ -1,10 +1,12 @@
 #pragma once
+#ifndef CGAME_MANAGER_H
+#define CGAME_MANAGER_H
+
 
 #include <iostream>
 
 using namespace std;
 
-class cCharacter;
 class cGame_Manager
 {
 public:
@@ -25,3 +27,5 @@ protected:
 private:
 
 };
+
+#endif

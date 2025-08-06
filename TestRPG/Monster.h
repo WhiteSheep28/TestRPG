@@ -1,4 +1,6 @@
 #pragma once
+#ifndef MONSTER_H
+#define MONSTER_H
 
 #include <iostream>
 
@@ -18,3 +20,5 @@ protected:
 private:
 	friend class cDungeon;
 };
+
+#endif

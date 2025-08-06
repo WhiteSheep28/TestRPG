@@ -24,11 +24,6 @@ void cObject_Manager::All_Stats()
 	m_nDefense = m_nBase_Defense;
 }
 
-void cObject_Manager::Max_Stats()
-{
-	m_nMax_Health = m_nBase_Health;
-}
-
 void cObject_Manager::All_Stats_Ui()
 {
 	cout << "Ã¼·Â : " << m_nHealth << endl;

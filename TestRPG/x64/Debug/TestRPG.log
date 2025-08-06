@@ -1,4 +1,115 @@
-﻿  Character.cpp
+﻿  Dungeon.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.h(15,21): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Dungeon.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.h(17,21): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Dungeon.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(13,52): error C2061: 구문 오류: 식별자 'cItem'
+  (소스 파일 'Dungeon.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.cpp(25,16): error C2511: 'void cDungeon::Monster_Spawn(cCharacter *,cNormal_Item *,cItem_Inventory *)': 오버로드된 멤버 함수가 'cDungeon'에 없습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.h(9,7):
+      'cDungeon' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.cpp(31,3): error C2660: 'cDungeon::Dungeon_Fight': 함수는 4개의 인수를 사용하지 않습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.h(17,7):
+      'cDungeon::Dungeon_Fight' 선언을 참조하십시오.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.cpp(31,3):
+      인수 목록 '(cCharacter *, cMonster *, cNormal_Item *, cItem_Inventory *)'을(를) 일치시키는 동안
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.cpp(42,16): error C2511: 'void cDungeon::Dungeon_Fight(cCharacter *,cMonster *,cNormal_Item *,cItem_Inventory *)': 오버로드된 멤버 함수가 'cDungeon'에 없습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.h(9,7):
+      'cDungeon' 선언을 참조하십시오.
+  
+  Equipment_Inventory.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(13,28): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Equipment_Inventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(14,31): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Equipment_Inventory.cpp'을(를) 컴파일하는 중)
+  
+  Inventory.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(13,28): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Inventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(14,31): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Inventory.cpp'을(를) 컴파일하는 중)
+  
+  Item.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(17,27): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Item.cpp'을(를) 컴파일하는 중)
+  
+  Item_Inventory.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(13,28): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Item_Inventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(14,31): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Item_Inventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.h(18,28): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Item_Inventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.h(19,31): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Item_Inventory.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.cpp(22,23): error C2511: 'void cItem_Inventory::Inventory_Ui(cCharacter *,cNormal_Item *)': 오버로드된 멤버 함수가 'cItem_Inventory'에 없습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.h(11,7):
+      'cItem_Inventory' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.cpp(26,2): error C2597: 비정적 멤버 'cInventory::Is_Invite_Inventory'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Inventory.h(21,7):
+      'cInventory::Is_Invite_Inventory' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.cpp(75,3): error C2660: 'cItem_Inventory::Clean_Inventory': 함수는 2개의 인수를 사용하지 않습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.h(19,15):
+      'cItem_Inventory::Clean_Inventory' 선언을 참조하십시오.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.cpp(75,3):
+      인수 목록 '(cCharacter *, cNormal_Item *)'을(를) 일치시키는 동안
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.cpp(81,23): error C2511: 'void cItem_Inventory::Clean_Inventory(cCharacter *,cNormal_Item *)': 오버로드된 멤버 함수가 'cItem_Inventory'에 없습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item_Inventory.h(11,7):
+      'cItem_Inventory' 선언을 참조하십시오.
+  
+  main.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Dungeon.h(17,45): error C2061: 구문 오류: 식별자 'cMonster'
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\main.cpp(19,6): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   Normal_Item.cpp
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(17,27): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Normal_Item.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.h(20,27): error C2061: 구문 오류: 식별자 'cCharacter'
+  (소스 파일 'Normal_Item.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(19,20): error C2511: 'void cNormal_Item::Item_Manage(cCharacter *,int,int,int)': 오버로드된 멤버 함수가 'cNormal_Item'에 없습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.h(11,7):
+      'cNormal_Item' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(51,48): error C2597: 비정적 멤버 'cItem::Is_Exists_Item'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(22,7):
+      'cItem::Is_Exists_Item' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(52,54): error C2597: 비정적 멤버 'cItem::Is_Exists_Item'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(22,7):
+      'cItem::Is_Exists_Item' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(89,51): error C2597: 비정적 멤버 'cItem::Is_Exists_Item'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(22,7):
+      'cItem::Is_Exists_Item' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(90,57): error C2597: 비정적 멤버 'cItem::Is_Exists_Item'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(22,7):
+      'cItem::Is_Exists_Item' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(127,39): error C2597: 비정적 멤버 'cItem::Is_Exists_Item'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(22,7):
+      'cItem::Is_Exists_Item' 선언을 참조하십시오.
+  
+C:\Users\admin\Downloads\TestRPG-main\TestRPG\Normal_Item.cpp(128,45): error C2597: 비정적 멤버 'cItem::Is_Exists_Item'에 대한 참조가 잘못되었습니다.
+      C:\Users\admin\Downloads\TestRPG-main\TestRPG\Item.h(22,7):
+      'cItem::Is_Exists_Item' 선언을 참조하십시오.
+  
+  Object_Manager.cpp
   코드를 생성하고 있습니다...
-  TestRPG.vcxproj -> C:\Users\admin\Downloads\TestRPG-main\x64\Debug\TestRPG.exe

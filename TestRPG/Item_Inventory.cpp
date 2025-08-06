@@ -21,6 +21,7 @@ cItem_Inventory::~cItem_Inventory()
 
 void cItem_Inventory::Inventory_Ui(cCharacter* pCharacter, cNormal_Item* pNormal_Item)
 {
+	int nChange_Num = 0;
 	int nInventory_Count = 0;
 	Is_Invite_Inventory = 1;
 
@@ -61,7 +62,9 @@ void cItem_Inventory::Inventory_Ui(cCharacter* pCharacter, cNormal_Item* pNormal
 		case '9':
 		case '10':
 		{
-			pNormal_Item->Item_Manage(pCharacter, pCharacter->m_nItem_Inventory[pCharacter->Get_Select_Num()], 0, 1);
+			nChange_Num = (int)pCharacter->Get_Select_Num() - 48;
+
+			pNormal_Item->Item_Manage(pCharacter, pCharacter->m_nItem_Inventory[nChange_Num], 0, 2);
 
 			break;
 		}
@@ -69,6 +72,62 @@ void cItem_Inventory::Inventory_Ui(cCharacter* pCharacter, cNormal_Item* pNormal
 		default: continue;
 		}
 		 
+		Clean_Inventory(pCharacter, pNormal_Item);
+
 		if (pCharacter->Get_Select_Num() == ' ') break;
+	}
+}
+
+void cItem_Inventory::Clean_Inventory(cCharacter* pCharacter, cNormal_Item* pNormal_Item)
+{
+	int nInventory_Count = 0;
+	int nTemp_Inventory_Count = 0;
+
+	while (nInventory_Count != 11)
+	{
+		if (pCharacter->m_nItem_Inventory[nInventory_Count] != 0)
+		{
+			pNormal_Item->Item_Manage(pCharacter, pCharacter->m_nItem_Inventory[nInventory_Count], 0, 4);
+
+			if (pNormal_Item->Check_Exists_Item() == 0) pCharacter->m_nItem_Inventory[nInventory_Count] = 0;
+		}
+
+		nInventory_Count++;
+	}
+
+	nInventory_Count = 0;
+
+	while (nInventory_Count != 11)
+	{
+		nTemp_Inventory_Count = nInventory_Count;
+	
+		while (pCharacter->m_nItem_Inventory[nInventory_Count] != 0)
+		{
+			if (nInventory_Count == 0)
+			{
+				break;
+			}
+			else if (pCharacter->m_nItem_Inventory[nInventory_Count - 1] != 0)
+			{
+				break;
+			}
+			else
+			{
+				pCharacter->m_nItem_Inventory[nInventory_Count - 1] = pCharacter->m_nItem_Inventory[nInventory_Count];
+
+				pCharacter->m_nItem_Inventory[nInventory_Count] = 0;
+
+				nInventory_Count--;
+
+				if (pCharacter->m_nItem_Inventory[nInventory_Count - 1] != 0)
+				{
+					break;
+				}
+			}
+		}
+
+		nInventory_Count = nTemp_Inventory_Count;
+
+		nInventory_Count++;
 	}
 }

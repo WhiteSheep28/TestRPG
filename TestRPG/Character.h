@@ -1,4 +1,6 @@
 #pragma once
+#ifndef CHARACTER_H
+#define CHARACTER_H
 
 #include <iostream>
 
@@ -16,6 +18,8 @@ public:
 	virtual ~cCharacter();
 
 	int Check_Healing_Potion() { return m_nMy_Healing_Potion; }
+	int Check_Road_PickUp_Bread() { return m_nMy_Road_PickUp_Bread; }
+	int Check_Trash() { return m_nMy_Trash; }
 
 protected:
 
@@ -25,3 +29,5 @@ private:
 	friend class cItem_Inventory;
 	friend class cNormal_Item;
 };
+
+#endif

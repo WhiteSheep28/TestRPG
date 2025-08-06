@@ -1,14 +1,11 @@
 #pragma once
+#ifndef CDUNGEON_H
+#define CDUNGEON_H
 
 #include <iostream>
 
 using namespace std;
 
-class cCharacter;
-class cMonster;
-class cNormal_Item;
-class cInventory;
-class cItem_Inventory;
 class cDungeon
 {
 public:
@@ -25,3 +22,5 @@ protected:
 private:
 
 };
+
+#endif

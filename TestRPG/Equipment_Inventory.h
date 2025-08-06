@@ -1,4 +1,6 @@
 #pragma once
+#ifndef CEQUIPMENT_INVENTORY_H
+#define CEQUIPMENT_INVENTORY_H
 
 #include <iostream>
 
@@ -24,3 +26,5 @@ protected:
 private:
 
 };
+
+#endif

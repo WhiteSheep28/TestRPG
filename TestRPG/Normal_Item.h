@@ -1,4 +1,6 @@
 #pragma once
+#ifndef NORMAL_ITEM_H
+#define NORMAL_ITEM_H
 
 #include <iostream>
 
@@ -22,3 +24,5 @@ protected:
 private:
 
 };
+
+#endif
